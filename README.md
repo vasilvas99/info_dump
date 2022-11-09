@@ -1,6 +1,6 @@
 # SSH OS info scrape
 
-A script that SSH's to a host an obtains relevant system information. 
+A script that SSH's to a host and obtains relevant system information. 
 
 ## IP configurations
 
