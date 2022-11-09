@@ -1,4 +1,4 @@
-# Info dump
+# SSH OS info scrape
 
 A script that SSH's to a host an obtains relevant system information. 
 
