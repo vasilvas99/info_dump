@@ -68,8 +68,8 @@ def execute_single_command(bash_cmd: str):
 
 
 info_dict = {}
-info_dict["board_info"] = (
-    execute_single_command(r"cat /proc/cpuinfo | tail -n 4")
+info_dict["cpu_info"] = (
+    execute_single_command(r"cat /proc/cpuinfo")
     .replace("\t", "")
     .replace(":", " =")
     .split("\n")
@@ -78,9 +78,9 @@ info_dict["uname"] = execute_single_command(r"echo $(uname) $(uname -r) $(uname 
 info_dict["os_release"] = execute_single_command(r"cat /usr/lib/os-release").split("\n")
 info_dict["hostname"] = execute_single_command(r"cat /etc/hostname")
 info_dict["eth0_MAC"] = execute_single_command(r"cat /sys/class/net/eth0/address")
-info_dict["eth0_IPv4"] = execute_single_command(r"ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'")
+info_dict["eth0_IPv4"] = execute_single_command(r"ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'").split("\n")
 info_dict["wlan_MAC"] = execute_single_command(r"cat /sys/class/net/wlan0/address")
-info_dict["wlan0_IPv4"] = execute_single_command(r"ip -4 addr show wlan0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'")
+info_dict["wlan0_IPv4"] = execute_single_command(r"ip -4 addr show wlan0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'").split("\n")
 
 client.close()
 print("=============================================")

@@ -17,7 +17,7 @@ To setup the SSH credentials and other connection information edit the `dump_inf
 }
 ```
 
-This script does not depend on a system installation of OpenSSH but rather uses the `paramiko` library that is a "pure-Python" implenetation of the ssh protocol.
+This script does not depend on a system installation of OpenSSH but rather uses the `paramiko` library that is a "pure-Python" implementation of the ssh protocol.
 
 To install it:
 
@@ -28,7 +28,7 @@ Other than paramiko, there are no external dependencies.
 
 ## Running
 
-After paramiko is installed and the json config file is approprietly edited please use:
+After paramiko is installed and the json config file is appropriately edited please use:
 
 `python dump_info.py`
 
