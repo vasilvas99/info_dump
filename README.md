@@ -17,20 +17,24 @@ To setup the SSH credentials and other connection information edit the `dump_inf
 }
 ```
 
-This script does not depend on a system installation of OpenSSH but rather uses the `paramiko` library that is a "pure-Python" implementation of the ssh protocol.
+This script does not depend on a system installation of OpenSSH but rather uses the `paramiko` library that is a "pure-Python" implementation of the ssh protocol. That __should__ make it platform independent, as not all Windows clients have OpenSSH installed by default for example.
 
 To install it:
 
-`pip3 install paramiko`
+```bash
+pip3 install paramiko
+```
 
 Other than paramiko, there are no external dependencies.
 
 
 ## Running
 
-After paramiko is installed and the json config file is appropriately edited please use:
+After paramiko is installed and the json config file is appropriately edited, please run:
 
-`python dump_info.py`
+```bash
+python dump_info.py
+```
 
 ## Example output:
 
