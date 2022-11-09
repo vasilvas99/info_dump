@@ -1,6 +1,6 @@
 {
-    "HOST": "127.0.0.1",
-    "PORT": "2222",
+    "HOST": "192.168.7.1",
+    "PORT": "22",
     "SSH_USER": "root",
     "SSH_PASS": "",
     "PING_TIMES": 1,
