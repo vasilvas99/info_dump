@@ -36,7 +36,43 @@ After paramiko is installed and the json config file is appropriately edited ple
 
 ```json
 {
-  "board_info": [
+  "cpu_info": [
+    "processor = 0",
+    "BogoMIPS = 108.00",
+    "Features = fp asimd evtstrm crc32 cpuid",
+    "CPU implementer = 0x41",
+    "CPU architecture = 8",
+    "CPU variant = 0x0",
+    "CPU part = 0xd08",
+    "CPU revision = 3",
+    "",
+    "processor = 1",
+    "BogoMIPS = 108.00",
+    "Features = fp asimd evtstrm crc32 cpuid",
+    "CPU implementer = 0x41",
+    "CPU architecture = 8",
+    "CPU variant = 0x0",
+    "CPU part = 0xd08",
+    "CPU revision = 3",
+    "",
+    "processor = 2",
+    "BogoMIPS = 108.00",
+    "Features = fp asimd evtstrm crc32 cpuid",
+    "CPU implementer = 0x41",
+    "CPU architecture = 8",
+    "CPU variant = 0x0",
+    "CPU part = 0xd08",
+    "CPU revision = 3",
+    "",
+    "processor = 3",
+    "BogoMIPS = 108.00",
+    "Features = fp asimd evtstrm crc32 cpuid",
+    "CPU implementer = 0x41",
+    "CPU architecture = 8",
+    "CPU variant = 0x0",
+    "CPU part = 0xd08",
+    "CPU revision = 3",
+    "",
     "Hardware = BCM2835",
     "Revision = d03114",
     "Serial = 100000007c38a9ed",
@@ -55,8 +91,12 @@ After paramiko is installed and the json config file is appropriately edited ple
   ],
   "hostname": "leda-c939",
   "eth0_MAC": "e4:5f:01:0e:c9:39",
-  "eth0_IPv4": "192.168.7.1",
+  "eth0_IPv4": [
+    "192.168.7.1"
+  ],
   "wlan_MAC": "e4:5f:01:0e:c9:3b",
-  "wlan0_IPv4": ""
+  "wlan0_IPv4": [
+    ""
+  ]
 }
 ```
