@@ -1,6 +1,12 @@
 # Info dump
 
-A script that SSH's to a host an obtains relevant system information.
+A script that SSH's to a host an obtains relevant system information. 
+
+## IP configurations
+
+This script requires an ethernet connection to the remote device. In the case of an RPI the simples possible configuration is a straight-trough (normal) Ethernet cable connecting the RJ45 ports of the Laptop/PC and the RPI4 and a static ip config on both the client and the remote device.
+
+**You can find here how to set a static ip on different OSes: [Setting a static ip](/static_ips.md)**
 
 ## Usage
 
